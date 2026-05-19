@@ -13,6 +13,7 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        breakpoint()
         income = 0
         for day in range(len(prices) - 1):
             if prices[day] < prices[day + 1]:
@@ -23,7 +24,10 @@ class Solution:
 prices = [7, 1, 5, 3, 6, 4]
 prices = [1, 2, 3, 4, 5]
 prices = [7, 6, 4, 3, 1]
+breakpoint()
 print(Solution().maxProfit(prices))
+breakpoint()
+a = 1
 
 # Здесь не очевидный момент в том, что мы не должны искать оптимально возможную дату для продажи.
 # 1. Всё сводится к продаже сразу, как только видим рост цен.
